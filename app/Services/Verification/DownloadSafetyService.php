@@ -180,7 +180,7 @@ final readonly class DownloadSafetyService
      */
     public function userAgent(): string
     {
-        return config()->string('verification.user_agent', 'ForgeVerifier/1.0 (+https://forge.sp-tarkov.com)');
+        return config()->string('verification.user_agent', 'ForgeVerifier/1.0 (+https://forge.sp-mod.com)');
     }
 
     /**

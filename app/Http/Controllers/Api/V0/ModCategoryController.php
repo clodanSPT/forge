@@ -48,8 +48,8 @@ final class ModCategoryController extends Controller
      *         }
      *     ],
      *     "links": {
-     *         "first": "https://forge.sp-tarkov.com/api/v0/mod-categories?page=1",
-     *         "last": "https://forge.sp-tarkov.com/api/v0/mod-categories?page=1",
+     *         "first": "https://forge.sp-mod.com/api/v0/mod-categories?page=1",
+     *         "last": "https://forge.sp-mod.com/api/v0/mod-categories?page=1",
      *         "prev": null,
      *         "next": null
      *     },
@@ -64,7 +64,7 @@ final class ModCategoryController extends Controller
      *                 "active": false
      *             },
      *             {
-     *                 "url": "https://forge.sp-tarkov.com/api/v0/mod-categories?page=1",
+     *                 "url": "https://forge.sp-mod.com/api/v0/mod-categories?page=1",
      *                 "label": "1",
      *                 "active": true
      *             },
@@ -74,7 +74,7 @@ final class ModCategoryController extends Controller
      *                 "active": false
      *             }
      *         ],
-     *         "path": "https://forge.sp-tarkov.com/api/v0/mod-categories",
+     *         "path": "https://forge.sp-mod.com/api/v0/mod-categories",
      *         "per_page": 50,
      *         "to": 2,
      *         "total": 2

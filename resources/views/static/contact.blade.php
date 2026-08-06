@@ -14,7 +14,7 @@
         />
     </x-slot>
 
-    <p>We're here to help you get the most out of the Single Player Tarkov community. Whether you need technical
+    <p>We're here to help you get the most out of the Single Player T***** community. Whether you need technical
         support, have questions about our guidelines, or want to report an issue, we have several ways to get in touch.
     </p>
 
@@ -267,7 +267,7 @@
         <div class="mb-2 mt-4 text-center">
             <div class="mt-3">
                 <code
-                    class="rounded bg-gray-950/40 px-4 py-2 text-sm text-purple-100">singleplayertarkov@gmail.com</code>
+                    class="rounded bg-gray-950/40 px-4 py-2 text-sm text-purple-100">TBD</code>
             </div>
             <small>If misused, you will be blocked from future communication.</small>
         </div>

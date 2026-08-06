@@ -17,7 +17,7 @@ final class PublishHorizonAssetsCommand extends Command
      * Horizon 5.47 inlines its ~1.4 MB JavaScript bundle straight into the dashboard HTML via Horizon::js(). Behind our
      * Octane (FrankenPHP) origin that oversized response is truncated mid-stream, so the Vue app never mounts and the
      * dashboard renders blank. Copying the bundle into public/vendor/horizon lets app:upload-assets mirror it to R2, and
-     * the overridden Horizon layout loads it from forge-static.sp-tarkov.com via asset(), keeping it off the origin. This
+     * the overridden Horizon layout loads it from forge-static.sp-mod.com via asset(), keeping it off the origin. This
      * runs from composer's post-autoload-dump hook so the published bundle always matches the installed Horizon version.
      */
     public function handle(): int

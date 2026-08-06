@@ -16,12 +16,12 @@ return [
     'title' => env('APP_NAME', 'The Forge').' API Documentation',
 
     // A short description of your API. Will be included in the docs webpage, Postman collection and OpenAPI spec.
-    'description' => 'The greatest resource available for Single Player Tarkov modifications. Where modding legends are made. Discover powerful tools, expert-written guides, and exclusive mods. Craft your vision. Transform the game.',
+    'description' => 'The greatest resource available for Single Player T***** modifications. Where modding legends are made. Discover powerful tools, expert-written guides, and exclusive mods. Craft your vision. Transform the game.',
 
     // The base URL displayed in the docs.
     // If you're using `laravel` type, you can set this to a dynamic string, like '{{ config("app.tenant_url") }}' to get a dynamic base URL.
     // Production base URL the public docs should advertise. Falls through to APP_URL so local docs builds work too.
-    'base_url' => env('APP_URL', 'https://forge.sp-tarkov.com'),
+    'base_url' => env('APP_URL', 'https://forge.sp-mod.com'),
 
     // Routes to include in the docs
     'routes' => [

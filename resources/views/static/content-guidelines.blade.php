@@ -182,7 +182,7 @@ public override string ModGuid { get; init; } = "com.sp-tarkov.examples.editdata
 
 // Only include letters and numbers in the Name and Author properties:
 public override string Name { get; init; } = "EditDatabaseExample";
-public override string Author { get; init; } = "SPTarkov";
+public override string Author { get; init; } = "SP-Mod";
 
 // Define your mod version here:
 public override SemanticVersioning.Version Version { get; } = new("1.2.3");
@@ -484,7 +484,7 @@ public override SemanticVersioning.Range SptVersion { get; } = new("4.0.0");</co
     <p>The Forge strictly prohibits content that could be used to gain unfair advantages in live multiplayer
         environments.</p>
     <ul>
-        <li>Any mod usable in live Escape From Tarkov multiplayer is prohibited to prevent cheating migration</li>
+        <li>Any mod usable in live Escape From T***** multiplayer is prohibited to prevent cheating migration</li>
         <li>"Sunset" cheats, which are mods originally developed as live game cheats that have been repurposed for SPT
             after detection or obsolescence, are strictly forbidden regardless of their current stated purpose</li>
     </ul>
@@ -608,7 +608,7 @@ public override SemanticVersioning.Range SptVersion { get; } = new("4.0.0");</co
     <p>The appeals process provides creators with opportunities to address violations while maintaining platform
         security and compliance standards.</p>
     <ol>
-        <li>Contact singleplayertarkov@gmail.com with specific details about the content and circumstances</li>
+        <li>Contact TBD with specific details about the content and circumstances</li>
         <li>Provide evidence demonstrating that content complies with current guidelines</li>
         <li>Staff review is completed within 10 business days of receiving complete appeal information</li>
         <li>Decision is communicated with clear reasoning explaining the outcome</li>
@@ -647,7 +647,7 @@ public override SemanticVersioning.Range SptVersion { get; } = new("4.0.0");</co
     </ul>
     <p><strong>Remember:</strong> These guidelines ensure The Forge maintains high standards for content quality,
         security, and user experience. When in doubt, contact staff for guidance before submitting.</p>
-    <p><strong>Questions?</strong> Contact us at singleplayertarkov@gmail.com</p>
+    <p><strong>Questions?</strong> Contact us at TBD</p>
 
     <hr>
 
