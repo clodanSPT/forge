@@ -180,9 +180,9 @@
             <flux:callout.text>
                 Please use our code paste service instead:
                 <flux:callout.link
-                    href="https://codepaste.sp-tarkov.com"
+                    href="https://codepaste.sp-mod.com"
                     external
-                >https://codepaste.sp-tarkov.com</flux:callout.link>
+                >https://codepaste.sp-mod.com</flux:callout.link>
             </flux:callout.text>
         </flux:callout>
     </div>

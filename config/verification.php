@@ -115,7 +115,7 @@ return [
     |
     */
 
-    'user_agent' => env('VERIFICATION_USER_AGENT', 'ForgeVerifier/1.0 (+https://forge.sp-tarkov.com)'),
+    'user_agent' => env('VERIFICATION_USER_AGENT', 'ForgeVerifier/1.0 (+https://forge.sp-mod.com)'),
 
     /*
     |--------------------------------------------------------------------------

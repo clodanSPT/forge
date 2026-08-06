@@ -12,7 +12,7 @@
                 <x-application-mark />
                 <p class="mt-6 flex space-x-4">
                     <a
-                        href="https://github.com/sp-tarkov/forge"
+                        href="https://github.com/clodanSPT/forge"
                         target="_blank"
                         title="{{ __('View on GitHub') }}"
                     >
@@ -45,7 +45,7 @@
                 </p>
                 <p class="mt-4 text-sm text-gray-400">
                     This site is open source.<br /><a
-                        href="https://github.com/sp-tarkov/forge"
+                        href="https://github.com/clodanSPT/forge"
                         target="_blank"
                         class="text-white underline hover:text-gray-300"
                     >Help build it!</a>
@@ -53,7 +53,7 @@
             </div>
             <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 xl:col-span-2 xl:mt-0">
                 <div class="sm:order-first">
-                    <h3 class="text-sm font-semibold leading-6 text-white">Single Player Tarkov</h3>
+                    <h3 class="text-sm font-semibold leading-6 text-white">Single Player T*****</h3>
                     <ul
                         role="list"
                         class="mt-6 space-y-4"
@@ -74,12 +74,12 @@
                                 class="text-sm leading-6 text-gray-300 hover:text-white"
                             >API</a></li>
                         <li><a
-                                href="https://wiki.sp-tarkov.com"
+                                href="https://wiki.sp-mod.com"
                                 target="_blank"
                                 class="text-sm leading-6 text-gray-300 hover:text-white"
                             >SPT Wiki</a></li>
                         <li><a
-                                href="https://github.com/sp-tarkov/build/releases"
+                                href="https://github.com/clodanSPT/build/releases"
                                 target="_blank"
                                 class="text-sm leading-6 text-gray-300 hover:text-white"
                             >SPT Changelog</a></li>
@@ -91,11 +91,12 @@
                     </ul>
                 </div>
                 <div class="sm:order-last">
-                    <h3 class="text-sm font-semibold leading-6 text-white">Escape from Tarkov</h3>
+                    <h3 class="text-sm font-semibold leading-6 text-white">Escape from T*****</h3>
                     <ul
                         role="list"
                         class="mt-6 space-y-4"
                     >
+                        <!--
                         <li><a
                                 href="https://www.escapefromtarkov.com/preorder-page"
                                 class="text-sm leading-6 text-gray-300 hover:text-white"
@@ -109,6 +110,7 @@
                                 target="_blank"
                                 class="text-sm leading-6 text-gray-300 hover:text-white"
                             >EFT Changelog</a></li>
+                        -->
                     </ul>
                 </div>
                 <div>
@@ -151,8 +153,6 @@
                 <div class="flex flex-col space-y-2 text-xs text-gray-400">
                     <p>
                         &copy; {{ date('Y') }} {{ config('app.name', 'The Forge') }}. All rights reserved.<br />
-                        Escape from Tarkov is a registered trademark of Battlestate Games Limited.<br />
-                        The Forge is not affiliated with Battlestate Games Limited in any way.
                     </p>
                 </div>
                 <div>

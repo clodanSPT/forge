@@ -168,7 +168,7 @@ return [
     'ulid' => 'The :attribute field must be a valid ULID.',
     'uuid' => 'The :attribute field must be a valid UUID.',
 
-    'does_not_contain_log_file' => 'Log files detected! Please use our code paste service instead: https://codepaste.sp-tarkov.com',
+    'does_not_contain_log_file' => 'Log files detected! Please use our code paste service instead: https://codepaste.sp-mod.com',
 
     /*
     |--------------------------------------------------------------------------

@@ -443,7 +443,7 @@
                         <div class="text-sm font-medium text-white">
                             <strong>Notice:</strong> This mod <em>may</em> make permanent changes to your profile, and
                             <em>may</em> not be removable without starting a new profile. <a
-                                href="https://wiki.sp-tarkov.com/Profiles#mods"
+                                href="https://wiki.sp-mod.com/Profiles#mods"
                                 target="_blank"
                                 class="text-white underline hover:text-white"
                             >More information.</a>

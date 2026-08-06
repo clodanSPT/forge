@@ -70,7 +70,7 @@
     <h2 id="community-vision">1. Our Community Vision</h2>
 
     <p>The Forge is built on the principles of collaboration, creativity, and mutual respect. We're a community of
-        modders, players, and enthusiasts who share a passion for Single Player Tarkov. These Community Standards ensure
+        modders, players, and enthusiasts who share a passion for Single Player T*****. These Community Standards ensure
         everyone can participate in a welcoming, productive environment.</p>
 
     <h4 id="our-core-values">Our Core Values:</h4>
@@ -263,7 +263,7 @@
 
     <h4 id="cheating-and-exploits">Cheating and Exploits:</h4>
     <ul>
-        <li>No mods designed for use in live Escape From Tarkov</li>
+        <li>No mods designed for use in live Escape From T*****</li>
         <li>No tools that could be used for competitive advantage in multiplayer games</li>
         <li>No hacks, aimbots, ESP, or similar cheating software</li>
         <li>Development and testing tools are allowed if clearly labelled</li>
@@ -331,7 +331,7 @@
     <h4 id="how-to-report-2">How to Report:</h4>
     <ul>
         <li>Use the "Report" button on posts, comments, and files</li>
-        <li>Contact staff directly for serious issues: singleplayertarkov@gmail.com</li>
+        <li>Contact staff directly for serious issues: TBD</li>
         <li>Provide specific details and evidence when possible</li>
         <li>Don't report content simply because you don't like it</li>
     </ul>
@@ -400,7 +400,7 @@
 
     <h4 id="if-you-believe-enforcement-action-was-unfair">If you believe enforcement action was unfair:</h4>
     <ol>
-        <li><strong>Contact staff</strong> at singleplayertarkov@gmail.com</li>
+        <li><strong>Contact staff</strong> at TBD</li>
         <li><strong>Provide specific details</strong> about why you believe the action was incorrect</li>
         <li><strong>Include relevant evidence</strong> or context that wasn't considered</li>
         <li><strong>Be respectful</strong> in your communication - hostility won't help your case</li>

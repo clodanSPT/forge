@@ -3419,7 +3419,7 @@ describe('LogFileDetection', function (): void {
             $errorMessage = $errors->first('newCommentBody');
 
             expect($errorMessage)->toContain('Log files detected')
-                ->and($errorMessage)->toContain('https://codepaste.sp-tarkov.com');
+                ->and($errorMessage)->toContain('https://codepaste.sp-mod.com');
         });
     });
 

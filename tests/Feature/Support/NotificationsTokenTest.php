@@ -83,7 +83,7 @@ it('logs a warning and still forgets the token when the flush broadcast fails', 
          */
         public function broadcast(array $channels, $event, array $payload = []): void
         {
-            throw new BroadcastException('cURL error 7: Failed to connect to forge-ws.sp-tarkov.com port 80');
+            throw new BroadcastException('cURL error 7: Failed to connect to forge-ws.sp-mod.com port 80');
         }
     });
 
