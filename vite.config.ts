@@ -7,7 +7,7 @@ import { defineConfig } from 'vite-plus';
 /**
  * Minifies the hand-maintained JSON files under resources/json and writes them, preserving their relative path, into
  * the local public disk (storage/app/public). The app:upload-assets command then mirrors these to Cloudflare R2 so they
- * are served from forge-static.sp-tarkov.com at a stable, unhashed URL. The JSON is validated and minified.
+ * are served from forge-static.sp-mod.com at a stable, unhashed URL. The JSON is validated and minified.
  */
 function copyStaticJson() {
     const sourceDir = resolve('resources/json');

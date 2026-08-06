@@ -52,7 +52,7 @@ final class ModVersionController extends Controller
      *              "hub_id": null,
      *              "version": "0.2.9",
      *              "description": "Magni eius ad temporibus similique accusamus assumenda aliquid. Quisquam placeat in necessitatibus ducimus quasi odit. Autem nulla ea minus itaque.",
-     *              "link": "https://forge.sp-tarkov.com/mod/download/1/example-mod/0.2.9",
+     *              "link": "https://forge.sp-mod.com/mod/download/1/example-mod/0.2.9",
      *              "content_length": 52428800,
      *              "spt_version_constraint": "^1.0.0",
      *              "downloads": 8,
@@ -66,7 +66,7 @@ final class ModVersionController extends Controller
      *              "hub_id": null,
      *              "version": "8.2.8",
      *              "description": "Mollitia voluptatem quia et ex aut. Qui libero tempore ut. Suscipit a eius recusandae aut pariatur soluta necessitatibus.",
-     *              "link": "https://forge.sp-tarkov.com/mod/download/1/example-mod/8.2.8",
+     *              "link": "https://forge.sp-mod.com/mod/download/1/example-mod/8.2.8",
      *              "spt_version_constraint": "<4.0.0",
      *              "downloads": 3332503,
      *              "fika_compatibility": "compatible",
@@ -79,7 +79,7 @@ final class ModVersionController extends Controller
      *              "hub_id": null,
      *              "version": "6.5.2",
      *              "description": "Consequatur modi et labore ea neque id. Natus sapiente amet rerum quia in molestiae autem. Eligendi molestiae blanditiis voluptatem earum.",
-     *              "link": "https://forge.sp-tarkov.com/mod/download/1/example-mod/6.5.2",
+     *              "link": "https://forge.sp-mod.com/mod/download/1/example-mod/6.5.2",
      *              "spt_version_constraint": "<4.0.0",
      *              "downloads": 40217550,
      *              "fika_compatibility": "incompatible",
@@ -92,7 +92,7 @@ final class ModVersionController extends Controller
      *              "hub_id": null,
      *              "version": "5.9.5",
      *              "description": "Aut ut inventore aut ex tempora a aspernatur asperiores. A laborum ullam ex rerum illo dolorem cupiditate. Veritatis id dolor qui quam et.",
-     *              "link": "https://forge.sp-tarkov.com/mod/download/1/example-mod/5.9.5",
+     *              "link": "https://forge.sp-mod.com/mod/download/1/example-mod/5.9.5",
      *              "spt_version_constraint": "^1.0.0",
      *              "downloads": 11236658,
      *              "fika_compatibility": "unknown",
@@ -105,7 +105,7 @@ final class ModVersionController extends Controller
      *              "hub_id": null,
      *              "version": "2.6.8",
      *              "description": "Aut in rerum est labore omnis. Voluptatem est velit doloribus expedita et. Illo error ut aspernatur quia quo repellat tenetur.",
-     *              "link": "https://forge.sp-tarkov.com/mod/download/1/example-mod/2.6.8",
+     *              "link": "https://forge.sp-mod.com/mod/download/1/example-mod/2.6.8",
      *              "spt_version_constraint": ">=3.0.0",
      *              "downloads": 425925,
      *              "fika_compatibility": "compatible",
@@ -115,8 +115,8 @@ final class ModVersionController extends Controller
      *          }
      *      ],
      *      "links": {
-     *          "first": "https://forge.sp-tarkov.com/api/v0/mod/1/versions?page=1",
-     *          "last": "https://forge.sp-tarkov.com/api/v0/mod/1/versions?page=1",
+     *          "first": "https://forge.sp-mod.com/api/v0/mod/1/versions?page=1",
+     *          "last": "https://forge.sp-mod.com/api/v0/mod/1/versions?page=1",
      *          "prev": null,
      *          "next": null
      *      },
@@ -131,7 +131,7 @@ final class ModVersionController extends Controller
      *                  "active": false
      *              },
      *              {
-     *                  "url": "https://forge.sp-tarkov.com/api/v0/mod/1/versions?page=1",
+     *                  "url": "https://forge.sp-mod.com/api/v0/mod/1/versions?page=1",
      *                  "label": "1",
      *                  "active": true
      *              },
@@ -141,7 +141,7 @@ final class ModVersionController extends Controller
      *                  "active": false
      *              }
      *          ],
-     *          "path": "https://forge.sp-tarkov.com/api/v0/mod/1/versions",
+     *          "path": "https://forge.sp-mod.com/api/v0/mod/1/versions",
      *          "per_page": 12,
      *          "to": 5,
      *          "total": 5
@@ -156,7 +156,7 @@ final class ModVersionController extends Controller
      *              "hub_id": null,
      *              "version": "0.2.9",
      *              "description": "Magni eius ad temporibus similique accusamus assumenda aliquid. Quisquam placeat in necessitatibus ducimus quasi odit. Autem nulla ea minus itaque.",
-     *              "link": "https://forge.sp-tarkov.com/mod/download/1/example-mod/0.2.9",
+     *              "link": "https://forge.sp-mod.com/mod/download/1/example-mod/0.2.9",
      *              "content_length": 52428800,
      *              "spt_version_constraint": "^1.0.0",
      *              "downloads": 8,
@@ -188,7 +188,7 @@ final class ModVersionController extends Controller
      *              "hub_id": null,
      *              "version": "8.2.8",
      *              "description": "Mollitia voluptatem quia et ex aut. Qui libero tempore ut. Suscipit a eius recusandae aut pariatur soluta necessitatibus.",
-     *              "link": "https://forge.sp-tarkov.com/mod/download/1/example-mod/8.2.8",
+     *              "link": "https://forge.sp-mod.com/mod/download/1/example-mod/8.2.8",
      *              "spt_version_constraint": "<4.0.0",
      *              "downloads": 3332503,
      *              "fika_compatibility": "compatible",
@@ -199,8 +199,8 @@ final class ModVersionController extends Controller
      *          }
      *      ],
      *      "links": {
-     *          "first": "https://forge.sp-tarkov.com/api/v0/mod/1/versions?include=dependencies&page=1",
-     *          "last": "https://forge.sp-tarkov.com/api/v0/mod/1/versions?include=dependencies&page=1",
+     *          "first": "https://forge.sp-mod.com/api/v0/mod/1/versions?include=dependencies&page=1",
+     *          "last": "https://forge.sp-mod.com/api/v0/mod/1/versions?include=dependencies&page=1",
      *          "prev": null,
      *          "next": null
      *      },
@@ -215,7 +215,7 @@ final class ModVersionController extends Controller
      *                  "active": false
      *              },
      *              {
-     *                  "url": "https://forge.sp-tarkov.com/api/v0/mod/1/versions?include=dependencies&page=1",
+     *                  "url": "https://forge.sp-mod.com/api/v0/mod/1/versions?include=dependencies&page=1",
      *                  "label": "1",
      *                  "active": true
      *              },
@@ -225,7 +225,7 @@ final class ModVersionController extends Controller
      *                  "active": false
      *              }
      *          ],
-     *          "path": "https://forge.sp-tarkov.com/api/v0/mod/1/versions",
+     *          "path": "https://forge.sp-mod.com/api/v0/mod/1/versions",
      *          "per_page": 12,
      *          "to": 2,
      *          "total": 2

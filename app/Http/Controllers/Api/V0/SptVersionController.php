@@ -39,7 +39,7 @@ final class SptVersionController extends Controller
      *             "version_patch": 3,
      *             "version_labels": "",
      *             "mod_count": 371,
-     *             "link": "https://github.com/sp-tarkov/build/releases/tag/3.11.3",
+     *             "link": "https://github.com/sp-mod/build/releases/tag/3.11.3",
      *             "color_class": "green",
      *             "created_at": "2025-04-08T19:29:40.000000Z",
      *             "updated_at": "2025-04-08T19:29:40.000000Z"
@@ -52,15 +52,15 @@ final class SptVersionController extends Controller
      *             "version_patch": 2,
      *             "version_labels": "",
      *             "mod_count": 371,
-     *             "link": "https://github.com/sp-tarkov/build/releases/tag/3.11.2",
+     *             "link": "https://github.com/sp-mod/build/releases/tag/3.11.2",
      *             "color_class": "green",
      *             "created_at": "2025-03-31T12:39:00.000000Z",
      *             "updated_at": "2025-03-31T12:39:00.000000Z"
      *         }
      *     ],
      *     "links": {
-     *         "first": "https://forge.sp-tarkov.com/api/v0/spt/versions?page=1",
-     *         "last": "https://forge.sp-tarkov.com/api/v0/spt/versions?page=1",
+     *         "first": "https://forge.sp-mod.com/api/v0/spt/versions?page=1",
+     *         "last": "https://forge.sp-mod.com/api/v0/spt/versions?page=1",
      *         "prev": null,
      *         "next": null
      *     },
@@ -75,7 +75,7 @@ final class SptVersionController extends Controller
      *                 "active": false
      *             },
      *             {
-     *                 "url": "https://forge.sp-tarkov.com/api/v0/spt/versions?page=1",
+     *                 "url": "https://forge.sp-mod.com/api/v0/spt/versions?page=1",
      *                 "label": "1",
      *                 "active": true
      *             },
@@ -85,7 +85,7 @@ final class SptVersionController extends Controller
      *                 "active": false
      *             }
      *         ],
-     *         "path": "https://forge.sp-tarkov.com/api/v0/spt/versions",
+     *         "path": "https://forge.sp-mod.com/api/v0/spt/versions",
      *         "per_page": 12,
      *         "to": 2,
      *         "total": 2

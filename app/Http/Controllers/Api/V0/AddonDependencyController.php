@@ -73,7 +73,7 @@ final class AddonDependencyController extends Controller
      *                  "latest_compatible_version": {
      *                      "id": 42,
      *                      "version": "2.1.0",
-     *                      "link": "https://forge.sp-tarkov.com/mod/download/5/dependency-mod/2.1.0",
+     *                      "link": "https://forge.sp-mod.com/mod/download/5/dependency-mod/2.1.0",
      *                      "content_length": 1048576,
      *                      "fika_compatibility": "compatible"
      *                  },

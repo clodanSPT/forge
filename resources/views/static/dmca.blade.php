@@ -59,7 +59,7 @@
 
     <h2 id="our-role">2. Our Role as a Platform</h2>
     <p>The Forge serves as a platform that hosts user-generated content, including modifications, tools, and related
-        materials for Single Player Tarkov. We do not review all content for copyright compliance before it is posted.
+        materials for Single Player T*****. We do not review all content for copyright compliance before it is posted.
     </p>
 
     <p><strong>Important Note:</strong> The Forge does not make legal determinations about whether content infringes
@@ -177,7 +177,7 @@
 
     <p><strong>The Forge</strong><br>
         <strong>DMCA Copyright Agent</strong><br>
-        <strong>Email:</strong> singleplayertarkov@gmail.com<br>
+        <strong>Email:</strong> TBD<br>
         <strong>Subject Line:</strong> "DMCA Notice" or "DMCA Counter-Notice"
     </p>
 
@@ -207,7 +207,7 @@
     <p><strong>Remember:</strong> Filing false DMCA notices or counter-notices may result in legal liability for
         perjury, damages, and attorney fees.</p>
 
-    <p><strong>Questions?</strong> Contact our Copyright Agent at singleplayertarkov@gmail.com</p>
+    <p><strong>Questions?</strong> Contact our Copyright Agent at TBD</p>
 
     <hr>
 

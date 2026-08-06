@@ -41,7 +41,7 @@ final class AddonVersionController extends Controller
      *              "id": 1,
      *              "version": "1.2.0",
      *              "description": "Added 10 new tracks",
-     *              "link": "https://forge.sp-tarkov.com/addon/download/1/example-addon/1.2.0",
+     *              "link": "https://forge.sp-mod.com/addon/download/1/example-addon/1.2.0",
      *              "content_length": 52428800,
      *              "mod_version_constraint": "^2.0.0",
      *              "downloads": 523,
@@ -53,7 +53,7 @@ final class AddonVersionController extends Controller
      *              "id": 2,
      *              "version": "1.1.0",
      *              "description": "Fixed audio glitches",
-     *              "link": "https://forge.sp-tarkov.com/addon/download/1/example-addon/1.1.0",
+     *              "link": "https://forge.sp-mod.com/addon/download/1/example-addon/1.1.0",
      *              "content_length": 51200000,
      *              "mod_version_constraint": "^2.0.0",
      *              "downloads": 1000,
@@ -63,8 +63,8 @@ final class AddonVersionController extends Controller
      *          }
      *      ],
      *      "links": {
-     *          "first": "https://forge.sp-tarkov.com/api/v0/addon/1/versions?page=1",
-     *          "last": "https://forge.sp-tarkov.com/api/v0/addon/1/versions?page=1",
+     *          "first": "https://forge.sp-mod.com/api/v0/addon/1/versions?page=1",
+     *          "last": "https://forge.sp-mod.com/api/v0/addon/1/versions?page=1",
      *          "prev": null,
      *          "next": null
      *      },
@@ -79,7 +79,7 @@ final class AddonVersionController extends Controller
      *                  "active": false
      *              },
      *              {
-     *                  "url": "https://forge.sp-tarkov.com/api/v0/addon/1/versions?page=1",
+     *                  "url": "https://forge.sp-mod.com/api/v0/addon/1/versions?page=1",
      *                  "label": "1",
      *                  "active": true
      *              },
@@ -89,7 +89,7 @@ final class AddonVersionController extends Controller
      *                  "active": false
      *              }
      *          ],
-     *          "path": "https://forge.sp-tarkov.com/api/v0/addon/1/versions",
+     *          "path": "https://forge.sp-mod.com/api/v0/addon/1/versions",
      *          "per_page": 12,
      *          "to": 2,
      *          "total": 2

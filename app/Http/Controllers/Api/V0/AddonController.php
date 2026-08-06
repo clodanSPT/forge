@@ -57,7 +57,7 @@ final class AddonController extends Controller
      *              },
      *              "additional_authors": [],
      *              "source_code_links": [],
-     *              "detail_url": "https://forge.sp-tarkov.com/addon/1/ultimate-music-pack",
+     *              "detail_url": "https://forge.sp-mod.com/addon/1/ultimate-music-pack",
      *              "contains_ads": false,
      *              "contains_ai_content": false,
      *              "mod_id": 5,
@@ -68,8 +68,8 @@ final class AddonController extends Controller
      *          }
      *      ],
      *      "links": {
-     *          "first": "https://forge.sp-tarkov.com/api/v0/addons?page=1",
-     *          "last": "https://forge.sp-tarkov.com/api/v0/addons?page=1",
+     *          "first": "https://forge.sp-mod.com/api/v0/addons?page=1",
+     *          "last": "https://forge.sp-mod.com/api/v0/addons?page=1",
      *          "prev": null,
      *          "next": null
      *      },
@@ -84,7 +84,7 @@ final class AddonController extends Controller
      *                  "active": false
      *              },
      *              {
-     *                  "url": "https://forge.sp-tarkov.com/api/v0/addons?page=1",
+     *                  "url": "https://forge.sp-mod.com/api/v0/addons?page=1",
      *                  "label": "1",
      *                  "active": true
      *              },
@@ -94,7 +94,7 @@ final class AddonController extends Controller
      *                  "active": false
      *              }
      *          ],
-     *          "path": "https://forge.sp-tarkov.com/api/v0/addons",
+     *          "path": "https://forge.sp-mod.com/api/v0/addons",
      *          "per_page": 12,
      *          "to": 1,
      *          "total": 1
@@ -177,7 +177,7 @@ final class AddonController extends Controller
      *          },
      *          "additional_authors": [],
      *          "source_code_links": [],
-     *          "detail_url": "https://forge.sp-tarkov.com/addon/1/ultimate-music-pack",
+     *          "detail_url": "https://forge.sp-mod.com/addon/1/ultimate-music-pack",
      *          "contains_ads": false,
      *          "contains_ai_content": false,
      *          "custom_ai_disclosure": "<p>AI tools were used to generate placeholder music tracks.</p>",

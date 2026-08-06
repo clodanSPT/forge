@@ -72,7 +72,7 @@ final class ModController extends Controller
      *                      "label": null
      *                  }
      *              ],
-     *              "detail_url": "https://forge.sp-tarkov.com/mods/1/recusandae-velit-incidunt",
+     *              "detail_url": "https://forge.sp-mod.com/mods/1/recusandae-velit-incidunt",
      *              "fika_compatibility": true,
      *              "featured": true,
      *              "contains_ads": true,
@@ -105,7 +105,7 @@ final class ModController extends Controller
      *                      "label": null
      *                  }
      *              ],
-     *              "detail_url": "https://forge.sp-tarkov.com/mods/2/adipisci-iusto-voluptas-nihil",
+     *              "detail_url": "https://forge.sp-mod.com/mods/2/adipisci-iusto-voluptas-nihil",
      *              "fika_compatibility": false,
      *              "featured": false,
      *              "contains_ads": true,
@@ -117,8 +117,8 @@ final class ModController extends Controller
      *          }
      *      ],
      *      "links": {
-     *          "first": "https://forge.sp-tarkov.com/api/v0/mods?page=1",
-     *          "last": "https://forge.sp-tarkov.com/api/v0/mods?page=1",
+     *          "first": "https://forge.sp-mod.com/api/v0/mods?page=1",
+     *          "last": "https://forge.sp-mod.com/api/v0/mods?page=1",
      *          "prev": null,
      *          "next": null
      *      },
@@ -133,7 +133,7 @@ final class ModController extends Controller
      *                  "active": false
      *              },
      *              {
-     *                  "url": "https://forge.sp-tarkov.com/api/v0/mods?page=1",
+     *                  "url": "https://forge.sp-mod.com/api/v0/mods?page=1",
      *                  "label": "1",
      *                  "active": true
      *              },
@@ -143,7 +143,7 @@ final class ModController extends Controller
      *                  "active": false
      *              }
      *          ],
-     *          "path": "https://forge.sp-tarkov.com/api/v0/mods",
+     *          "path": "https://forge.sp-mod.com/api/v0/mods",
      *          "per_page": 12,
      *          "to": 2,
      *          "total": 2
@@ -182,7 +182,7 @@ final class ModController extends Controller
      *                  "slug": "gameplay",
      *                  "color_class": "blue"
      *              },
-     *              "detail_url": "https://forge.sp-tarkov.com/mods/1/recusandae-velit-incidunt",
+     *              "detail_url": "https://forge.sp-mod.com/mods/1/recusandae-velit-incidunt",
      *              "fika_compatibility": true,
      *              "featured": true,
      *              "contains_ads": true,
@@ -194,8 +194,8 @@ final class ModController extends Controller
      *          }
      *      ],
      *      "links": {
-     *          "first": "https://forge.sp-tarkov.com/api/v0/mods?include=category&page=1",
-     *          "last": "https://forge.sp-tarkov.com/api/v0/mods?include=category&page=1",
+     *          "first": "https://forge.sp-mod.com/api/v0/mods?include=category&page=1",
+     *          "last": "https://forge.sp-mod.com/api/v0/mods?include=category&page=1",
      *          "prev": null,
      *          "next": null
      *      },
@@ -210,7 +210,7 @@ final class ModController extends Controller
      *                  "active": false
      *              },
      *              {
-     *                  "url": "https://forge.sp-tarkov.com/api/v0/mods?include=category&page=1",
+     *                  "url": "https://forge.sp-mod.com/api/v0/mods?include=category&page=1",
      *                  "label": "1",
      *                  "active": true
      *              },
@@ -220,7 +220,7 @@ final class ModController extends Controller
      *                  "active": false
      *              }
      *          ],
-     *          "path": "https://forge.sp-tarkov.com/api/v0/mods",
+     *          "path": "https://forge.sp-mod.com/api/v0/mods",
      *          "per_page": 12,
      *          "to": 1,
      *          "total": 1
@@ -253,7 +253,7 @@ final class ModController extends Controller
      *                      "label": null
      *                  }
      *              ],
-     *              "detail_url": "https://forge.sp-tarkov.com/mods/1/recusandae-velit-incidunt",
+     *              "detail_url": "https://forge.sp-mod.com/mods/1/recusandae-velit-incidunt",
      *              "fika_compatibility": true,
      *              "featured": true,
      *              "contains_ads": true,
@@ -286,8 +286,8 @@ final class ModController extends Controller
      *          }
      *      ],
      *      "links": {
-     *          "first": "https://forge.sp-tarkov.com/api/v0/mods?include=versions,license&page=1",
-     *          "last": "https://forge.sp-tarkov.com/api/v0/mods?include=versions,license&page=1",
+     *          "first": "https://forge.sp-mod.com/api/v0/mods?include=versions,license&page=1",
+     *          "last": "https://forge.sp-mod.com/api/v0/mods?include=versions,license&page=1",
      *          "prev": null,
      *          "next": null
      *      },
@@ -302,7 +302,7 @@ final class ModController extends Controller
      *                  "active": false
      *              },
      *              {
-     *                  "url": "https://forge.sp-tarkov.com/api/v0/mods?include=versions,license&page=1",
+     *                  "url": "https://forge.sp-mod.com/api/v0/mods?include=versions,license&page=1",
      *                  "label": "1",
      *                  "active": true
      *              },
@@ -312,7 +312,7 @@ final class ModController extends Controller
      *                  "active": false
      *              }
      *          ],
-     *          "path": "https://forge.sp-tarkov.com/api/v0/mods",
+     *          "path": "https://forge.sp-mod.com/api/v0/mods",
      *          "per_page": 12,
      *          "to": 1,
      *          "total": 1
@@ -415,7 +415,7 @@ final class ModController extends Controller
      *                  "label": null
      *              }
      *          ],
-     *          "detail_url": "https://forge.sp-tarkov.com/mods/2/adipisci-iusto-voluptas-nihil",
+     *          "detail_url": "https://forge.sp-mod.com/mods/2/adipisci-iusto-voluptas-nihil",
      *          "fika_compatibility": true,
      *          "featured": false,
      *          "contains_ads": true,
@@ -467,7 +467,7 @@ final class ModController extends Controller
      *                  "label": null
      *              }
      *          ],
-     *          "detail_url": "https://forge.sp-tarkov.com/mods/2/adipisci-iusto-voluptas-nihil",
+     *          "detail_url": "https://forge.sp-mod.com/mods/2/adipisci-iusto-voluptas-nihil",
      *          "fika_compatibility": true,
      *          "featured": false,
      *          "contains_ads": true,
@@ -504,7 +504,7 @@ final class ModController extends Controller
      *                  "label": null
      *              }
      *          ],
-     *          "detail_url": "https://forge.sp-tarkov.com/mods/2/adipisci-iusto-voluptas-nihil",
+     *          "detail_url": "https://forge.sp-mod.com/mods/2/adipisci-iusto-voluptas-nihil",
      *          "fika_compatibility": true,
      *          "featured": false,
      *          "contains_ads": true,
