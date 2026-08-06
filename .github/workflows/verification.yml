@@ -2,7 +2,7 @@ name: Build and Publish Verification Image
 
 on:
   push:
-    branches: ['main']
+    branches: [ ]
     paths: ['docker/verification/**']
   workflow_dispatch:
 
