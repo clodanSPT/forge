@@ -203,7 +203,7 @@ return [
 
     'examples' => [
         // Set this to any number to generate the same example values for parameters on each run,
-        'faker_seed' => 'Refringe',
+        'faker_seed' => 'clodan',
 
         // With API resources and transformers, Scribe tries to generate example models to use in your API responses.
         // By default, Scribe will try the model's factory, and if that fails, try fetching the first from the database.

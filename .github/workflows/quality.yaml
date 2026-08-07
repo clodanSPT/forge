@@ -81,9 +81,9 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "style: automatic fixes"
-          commit_user_name: Refringe
-          commit_user_email: me@refringe.com
-          commit_author: Refringe <me@refringe.com>
+          commit_user_name: clodan
+          commit_user_email: clodan-spt@hotmail.com
+          commit_author: clodan <clodan-spt@hotmail.com>
 
   rector:
     name: Code Modernization
@@ -117,9 +117,9 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "refactor: automatic fixes"
-          commit_user_name: Refringe
-          commit_user_email: me@refringe.com
-          commit_author: Refringe <me@refringe.com>
+          commit_user_name: clodan
+          commit_user_email: clodan-spt@hotmail.com
+          commit_author: clodan <clodan-spt@hotmail.com>
 
   phpstan:
     name: Static Analysis
