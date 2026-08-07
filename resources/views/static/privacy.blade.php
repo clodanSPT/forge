@@ -84,7 +84,7 @@
     <ul>
         <li><strong>Service:</strong> The Forge (Single Player T***** modding platform)</li>
         <li><strong>Website:</strong> https://forge.sp-mod.com</li>
-        <li><strong>Contact:</strong> TBD</li>
+        <li><strong>Contact:</strong> clodan-spt@hotmail.com</li>
     </ul>
 
     <h2 id="information-we-collect">2. Information We Collect</h2>
@@ -418,23 +418,23 @@
     <h2 id="contact-information">13. Contact Information</h2>
 
     <h3 id="13-1-general-privacy-questions">13.1 General Privacy Questions</h3>
-    <p><strong>Email:</strong> TBD<br><strong>Response Time:</strong> Within 5 business days
+    <p><strong>Email:</strong> clodan-spt@hotmail.com<br><strong>Response Time:</strong> Within 5 business days
     </p>
 
     <h3 id="13-2-data-protection-officer">13.2 Data Protection Officer</h3>
-    <p><strong>Name:</strong> Refringe<br><strong>Email:</strong> TBD</p>
+    <p><strong>Name:</strong> clodan<br><strong>Email:</strong> clodan-spt@hotmail.com</p>
 
     <h3 id="13-3-data-subject-requests">13.3 Data Subject Requests</h3>
     <h4 id="for-gdpr-ccpa-requests">For GDPR/CCPA requests:</h4>
     <ul>
-        <li><strong>Email:</strong> TBD</li>
+        <li><strong>Email:</strong> clodan-spt@hotmail.com</li>
         <li><strong>Processing Time:</strong> 30 days maximum</li>
     </ul>
 
     <h3 id="13-4-security-issues">13.4 Security Issues</h3>
     <h4 id="for-data-security-concerns">For data security concerns:</h4>
     <ul>
-        <li><strong>Email:</strong> TBD</li>
+        <li><strong>Email:</strong> clodan-spt@hotmail.com</li>
         <li><strong>Response Time:</strong> Within 24 hours for critical issues</li>
     </ul>
 

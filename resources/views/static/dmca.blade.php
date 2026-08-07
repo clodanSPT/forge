@@ -177,7 +177,7 @@
 
     <p><strong>The Forge</strong><br>
         <strong>DMCA Copyright Agent</strong><br>
-        <strong>Email:</strong> TBD<br>
+        <strong>Email:</strong> clodan-spt@hotmail.com<br>
         <strong>Subject Line:</strong> "DMCA Notice" or "DMCA Counter-Notice"
     </p>
 
@@ -207,7 +207,7 @@
     <p><strong>Remember:</strong> Filing false DMCA notices or counter-notices may result in legal liability for
         perjury, damages, and attorney fees.</p>
 
-    <p><strong>Questions?</strong> Contact our Copyright Agent at TBD</p>
+    <p><strong>Questions?</strong> Contact our Copyright Agent at clodan-spt@hotmail.com</p>
 
     <hr>
 

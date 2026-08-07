@@ -231,7 +231,7 @@
         <li><strong>Counter-notices</strong> can be submitted if you believe removal was in error</li>
     </ol>
 
-    <p>Contact: TBD</p>
+    <p>Contact: clodan-spt@hotmail.com</p>
 
     <h2 id="privacy-data">7. Privacy and Data</h2>
 
@@ -414,7 +414,7 @@
 
     <h2 id="contact-information">15. Contact Information</h2>
 
-    <p><strong>For all inquiries:</strong><br>Email: TBD</p>
+    <p><strong>For all inquiries:</strong><br>Email: clodan-spt@hotmail.com</p>
 
     <hr>
 
