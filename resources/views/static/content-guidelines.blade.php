@@ -608,7 +608,7 @@ public override SemanticVersioning.Range SptVersion { get; } = new("4.0.0");</co
     <p>The appeals process provides creators with opportunities to address violations while maintaining platform
         security and compliance standards.</p>
     <ol>
-        <li>Contact TBD with specific details about the content and circumstances</li>
+        <li>Contact clodan-spt@hotmail.com with specific details about the content and circumstances</li>
         <li>Provide evidence demonstrating that content complies with current guidelines</li>
         <li>Staff review is completed within 10 business days of receiving complete appeal information</li>
         <li>Decision is communicated with clear reasoning explaining the outcome</li>

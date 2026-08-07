@@ -331,7 +331,7 @@
     <h4 id="how-to-report-2">How to Report:</h4>
     <ul>
         <li>Use the "Report" button on posts, comments, and files</li>
-        <li>Contact staff directly for serious issues: TBD</li>
+        <li>Contact staff directly for serious issues: clodan-spt@hotmail.com</li>
         <li>Provide specific details and evidence when possible</li>
         <li>Don't report content simply because you don't like it</li>
     </ul>

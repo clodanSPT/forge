@@ -92,10 +92,6 @@
                                     class="cursor-pointer transition-colors duration-300 hover:text-gray-300"
                                     @click="game = true"
                                 >Touch grass, or something,</button> idk... <em>nerds</em>.</p>
-                            <!--
-                            Ain't I a stinker? lul
-                             - Refringe
-                            -->
                         </div>
                     </template>
                     <template x-if="game">
