@@ -219,11 +219,13 @@ return [
             'memory' => 256,
         ],
 
-        // The verification queue is consumed by a dedicated server running queue:work,
-        // not by Horizon on the main application server. Jobs are dispatched to the
-        // shared Redis instance and picked up by the verification worker:
+        // The verification queue is deliberately absent above: it is consumed by the
+        // forge-queue-verification systemd unit, running
         //
-        //   php artisan queue:work redis-verification --queue=verification --tries=2 --timeout=1620
+        //   php artisan queue:work redis-verification --queue=verification --tries=1 --timeout=3300
+        //
+        // Not being a Horizon supervisor, horizon:terminate does not reach it; the deploy
+        // uses queue:restart so it picks up new code.
         //
         // RunVerificationJob computes its own timeout (download + container timeouts + 120s slack), which overrides the
         // worker --timeout flag; the flag only applies to jobs without their own timeout, such as the cleanup jobs.
