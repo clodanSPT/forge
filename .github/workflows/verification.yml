@@ -1,28 +1,55 @@
 name: Build and Publish Verification Image
 
 on:
-  push:
-    branches: [ ]
-    paths: ['docker/verification/**']
+  workflow_run:
+    workflows: [Tests]
+    types: [completed]
   workflow_dispatch:
+
+concurrency:
+  group: verification-image-${{ github.event.workflow_run.head_branch || github.ref_name }}
+  cancel-in-progress: true
 
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}/verification
+  CANDIDATE_TAG: verification-candidate:ci
 
 jobs:
   build-and-push-image:
     runs-on: ubuntu-latest
 
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.head_branch == 'develop')
+
     permissions:
       contents: read
       packages: write
-      attestations: write
-      id-token: write
 
     steps:
+      - name: Resolve source ref
+        id: src
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            BRANCH="${{ github.ref_name }}"
+            SHA="${{ github.sha }}"
+          else
+            BRANCH="${{ github.event.workflow_run.head_branch }}"
+            SHA="${{ github.event.workflow_run.head_sha }}"
+          fi
+
+          IMAGE="$(printf '%s/%s' "$REGISTRY" "$IMAGE_NAME" | tr '[:upper:]' '[:lower:]')"
+
+          echo "sha=$SHA" >> "$GITHUB_OUTPUT"
+          echo "tags=$IMAGE:$BRANCH,$IMAGE:$BRANCH-${SHA:0:7}" >> "$GITHUB_OUTPUT"
+          echo "Building $BRANCH ($SHA)"
+
       - name: Checkout repository
         uses: actions/checkout@v7
+        with:
+          ref: ${{ steps.src.outputs.sha }}
 
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v4
@@ -34,23 +61,45 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v4
 
-      - name: Extract metadata (tags, labels) for Docker
-        id: meta
-        uses: docker/metadata-action@v6
+      - name: Build candidate image
+        uses: docker/build-push-action@v7
         with:
-          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
-          tags: |
-            type=raw,value=main
-            type=sha,prefix={{branch}}-
+          context: docker/verification
+          platforms: linux/amd64
+          load: true
+          push: false
+          tags: ${{ env.CANDIDATE_TAG }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
 
-      - name: Build and push Docker image
-        id: push
+      - name: Check the image and the host agree on the check suite
+        run: |
+          CONTAINER_JSON="$(docker run --rm --network=none "$CANDIDATE_TAG")"
+          echo "Container reported: $CONTAINER_JSON"
+
+          CONTAINER_CHECKS="$(printf '%s' "$CONTAINER_JSON" | sed -n 's/.*"checks_version":"\([^"]*\)".*/\1/p')"
+          HOST_CHECKS="$(sed -n "s/.*LATEST_CHECKS_VERSION = '\([^']*\)'.*/\1/p" app/Jobs/RunVerificationJob.php)"
+
+          if [ -z "$CONTAINER_CHECKS" ]; then
+            echo "::error::Image reported no checks_version. It may not be emitting the expected JSON contract."
+            exit 1
+          fi
+
+          if [ "$CONTAINER_CHECKS" != "$HOST_CHECKS" ]; then
+            echo "::error::Check suite mismatch: image reports '$CONTAINER_CHECKS', host expects '$HOST_CHECKS'. Bump CheckRegistry.ChecksVersion and RunVerificationJob::LATEST_CHECKS_VERSION together."
+            exit 1
+          fi
+
+          echo "Check suite $CONTAINER_CHECKS agrees with the host."
+
+      - name: Push image
         uses: docker/build-push-action@v7
         with:
           context: docker/verification
           platforms: linux/amd64
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          tags: ${{ steps.src.outputs.tags }}
+          labels: |
+            org.opencontainers.image.source=${{ github.server_url }}/${{ github.repository }}
+            org.opencontainers.image.revision=${{ steps.src.outputs.sha }}
           cache-from: type=gha
-          cache-to: type=gha,mode=max

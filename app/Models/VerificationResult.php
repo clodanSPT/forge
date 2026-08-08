@@ -90,6 +90,7 @@ final class VerificationResult extends Model
         ]);
 
         dispatch(new RunVerificationJob($result))
+            ->onConnection(config()->string('verification.connection', 'redis-verification'))
             ->onQueue(config()->string('verification.queue', 'verification'))
             ->afterCommit();
 

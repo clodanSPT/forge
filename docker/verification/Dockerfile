@@ -10,7 +10,7 @@ RUN dotnet restore /src/Verifier.csproj
 
 COPY src/ /src/
 
-RUN dotnet publish /src/Verifier.csproj -o /app --no-restore
+RUN dotnet publish /src/Verifier.csproj -o /app
 
 # Runtime stage
 FROM mcr.microsoft.com/dotnet/runtime:10.0-alpine

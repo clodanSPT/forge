@@ -64,9 +64,9 @@ new class extends Component
 
         Track::event(TrackingEventType::ACCOUNT_DELETE, $freshUser, $userData);
 
-        $freshUser->delete();
-
         Auth::guard('web')->logout();
+
+        $freshUser->delete();
 
         if (request()->hasSession()) {
             request()->session()->invalidate();

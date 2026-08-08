@@ -1,11 +1,6 @@
 name: TIA Baseline
 
-on:
-  push:
-    branches: [ ]
-  schedule:
-    - cron: '0 3 * * *'
-  workflow_dispatch:
+on: [ ]
 
 permissions:
   contents: read

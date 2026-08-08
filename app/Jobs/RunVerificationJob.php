@@ -464,7 +464,7 @@ final class RunVerificationJob implements ShouldBeUnique, ShouldQueue
 
     /**
      * The image pull policy passed to `docker run --pull`. Defaults to "always" so the worker adopts each freshly
-     * built image at the cost of a per-job registry check.
+     * published image at the cost of a per-job registry check.
      */
     private function pullPolicy(): string
     {
@@ -524,7 +524,7 @@ final class RunVerificationJob implements ShouldBeUnique, ShouldQueue
             return ['ok' => false, 'error' => 'No downloaded file available for container'];
         }
 
-        $dockerImage = config()->string('verification.docker_image', 'ghcr.io/sp-tarkov/forge/verification:main');
+        $dockerImage = config()->string('verification.docker_image', 'ghcr.io/clodanspt/forge/verification:release');
         $pullPolicy = $this->pullPolicy();
 
         if (config()->boolean('verification.build_local_image', false)) {

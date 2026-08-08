@@ -40,7 +40,7 @@ return [
     |
     */
 
-    'docker_image' => env('VERIFICATION_DOCKER_IMAGE', 'ghcr.io/sp-tarkov/forge/verification:main'),
+    'docker_image' => env('VERIFICATION_DOCKER_IMAGE', 'ghcr.io/clodanspt/forge/verification:release'),
 
     /*
     |--------------------------------------------------------------------------
@@ -64,6 +64,9 @@ return [
     | Hard limits applied to the extraction container. The process/thread cap is
     | fork-bomb protection; it must stay well above the handful of threads the
     | .NET runtime spawns, so the default is deliberately generous.
+    |
+    | The pull policy defaults to "always" so the worker adopts each freshly
+    | published image at the cost of a per-job registry check.
     |
     */
 
@@ -128,6 +131,21 @@ return [
     */
 
     'queue' => env('VERIFICATION_QUEUE', 'verification'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Queue Connection
+    |--------------------------------------------------------------------------
+    |
+    | Verification must NOT run on the default connection. A verification can take
+    | up to RunVerificationJob::maxRuntime() (around 50 minutes), while the default
+    | redis connection releases a reserved job after 150 seconds.
+    | The job would be re-reserved roughly every 2.5 minutes, starting a second,
+    | third, and so on... Docker container against the same VerificationResult row.
+    |
+    */
+
+    'connection' => env('VERIFICATION_QUEUE_CONNECTION', 'redis-verification'),
 
     'change_detection_queue' => env('VERIFICATION_CHANGE_DETECTION_QUEUE', 'verification-detection'),
 
