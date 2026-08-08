@@ -31,6 +31,17 @@ final class ProcessableAnimation implements ValidationRule
             return;
         }
 
+        $size = @getimagesizefromstring($blob);
+        if ($size === false) {
+            return;
+        }
+
+        if ($size[0] * $size[1] > ThumbnailService::MAX_DECODE_PIXELS) {
+            $fail(__('This image is too large to process. Reduce its dimensions.'));
+
+            return;
+        }
+
         try {
             $ping = new Imagick;
             $ping->pingImageBlob($blob);
@@ -47,6 +58,11 @@ final class ProcessableAnimation implements ValidationRule
             $canvasHeight = max($page['height'], $ping->getImageHeight());
             $ping->clear();
         } catch (ImagickException) {
+            // Reached only for something getimagesize recognised as an image, so the processor
+            // failing to read it means thumbnailing would fail later. Rejecting here rather than
+            // returning keeps the rule from passing images it cannot vet.
+            $fail(__('This image could not be processed. Try a different file.'));
+
             return;
         }
 

@@ -8,7 +8,7 @@ inputs:
   php-extensions:
     description: PHP extensions to install.
     required: false
-    default: dom, curl, libxml, mbstring, zip, pcntl, pdo, sqlite, pdo_sqlite, pdo_pgsql, gd, redis, igbinary, msgpack, memcached, gmp, :php-psr
+    default: dom, curl, libxml, mbstring, zip, pcntl, pdo, sqlite, pdo_sqlite, pdo_pgsql, gd, imagick, redis, igbinary, msgpack, memcached, gmp, :php-psr
   redis-options:
     description: Redis options to compile with.
     required: false
@@ -64,6 +64,29 @@ runs:
       env:
         REDIS_CONFIGURE_OPTS: ${{ inputs.redis-options }}
         REDIS_LIBS: ${{ inputs.redis-libs }}
+
+    # im not an expert but I believe the avif encoder is missing from the image
+    # please god make this work...
+    - name: Enable ImageMagick AVIF support
+      shell: bash
+      run: |
+        if sudo apt-get update -qq && sudo apt-get install -y -qq libheif-plugin-aomenc libheif-plugin-aomdec; then
+          php -r '
+            try {
+                $image = new Imagick;
+                $image->newImage(64, 64, new ImagickPixel("teal"));
+                $image->setImageFormat("avif");
+                $size = @getimagesizefromstring($image->getImageBlob());
+            } catch (Throwable $e) {
+                $size = false;
+            }
+            echo $size !== false && $size["mime"] === "image/avif"
+                ? "ImageMagick can write AVIF." . PHP_EOL
+                : "::warning::ImageMagick still cannot write AVIF; the profile upload test will fail." . PHP_EOL;
+          ' || true
+        else
+          echo "::warning::libheif AVIF plugins unavailable; the profile upload test will fail."
+        fi
 
     - name: Get Composer Cache Directory
       id: composer-cache
