@@ -17,6 +17,10 @@ pest()->use(MakesAnimatedTestImages::class);
 
 function makeProfileFormTestUpload(string $format, int $width = 256, int $height = 256): UploadedFile
 {
+    if (Imagick::queryFormats(mb_strtoupper($format)) === []) {
+        throw new RuntimeException(sprintf('ImageMagick has no %s delegate.', $format));
+    }
+
     $image = new Imagick;
     $image->newImage($width, $height, new ImagickPixel('teal'));
     $image->setImageFormat($format);

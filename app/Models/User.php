@@ -494,9 +494,20 @@ final class User extends Authenticatable implements Commentable, MustVerifyEmail
      */
     public function makeSearchableUsing(SupportCollection $models): SupportCollection
     {
-        if ($models instanceof Collection) {
-            $models->loadCount($this->searchableCounts());
+        if (! $models instanceof Collection || $models->isEmpty()) {
+            return $models;
         }
+
+        $present = $this->newModelQuery()
+            ->whereKey($models->modelKeys())
+            ->pluck($this->getKeyName())
+            ->all();
+
+        if ($present === []) {
+            return $models;
+        }
+
+        $models->whereIn($this->getKeyName(), $present)->loadCount($this->searchableCounts());
 
         return $models;
     }
