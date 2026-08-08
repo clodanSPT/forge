@@ -40,7 +40,7 @@ return [
     |
     */
 
-    'docker_image' => env('VERIFICATION_DOCKER_IMAGE', 'ghcr.io/clodanspt/forge/verification:master'),
+    'docker_image' => env('VERIFICATION_DOCKER_IMAGE', 'ghcr.io/clodanspt/forge/verification:release'),
 
     /*
     |--------------------------------------------------------------------------
