@@ -17,16 +17,25 @@ pest()->use(MakesAnimatedTestImages::class);
 
 function makeProfileFormTestUpload(string $format, int $width = 256, int $height = 256): UploadedFile
 {
-    if (Imagick::queryFormats(mb_strtoupper($format)) === []) {
-        throw new RuntimeException(sprintf('ImageMagick has no %s delegate.', $format));
-    }
-
     $image = new Imagick;
     $image->newImage($width, $height, new ImagickPixel('teal'));
     $image->setImageFormat($format);
 
     $blob = $image->getImageBlob();
     $image->clear();
+
+    $detected = @getimagesizefromstring($blob);
+    $extension = $detected === false ? null : image_type_to_extension($detected[2], false);
+
+    if ($extension !== $format) {
+        throw new RuntimeException(sprintf(
+            'ImageMagick produced %d bytes for %s that PHP reads as %s (magic %s).',
+            strlen($blob),
+            $format,
+            $extension === false || $extension === null ? 'no known image type' : $extension,
+            bin2hex(substr($blob, 0, 12)),
+        ));
+    }
 
     return UploadedFile::fake()->createWithContent('avatar.'.$format, $blob);
 }
